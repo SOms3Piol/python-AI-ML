@@ -38,7 +38,8 @@ class Neuron:
 
 if __name__ == "__main__":
     X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
-    y = [0, 1, 1, 1]
+    #y = [0, 1, 1, 1]   OR GATE
+    #y = [0 , 0 , 0 , 1] AND GATE
 
     neuron = Neuron()
     neuron.train(X, y)
