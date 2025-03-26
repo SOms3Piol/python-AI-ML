@@ -1,7 +1,7 @@
 import numpy as np
 
 class Neuron:
-    def __init__(self) -> None:
+    def __init__(self):
         self.w = np.random.rand(2)  
         self.b = np.random.rand(1)  
         self.output = None
@@ -47,4 +47,4 @@ if __name__ == "__main__":
     print("\nTesting:")
     for i in range(len(X)):
         pred = neuron.forward(X[i])
-        print(f"Input: {X[i]}, Prediction: {pred[0]}, Target: {y[i]}")
+        print(f"Input: {X[i]}, Prediction: {round(pred[0])}, Target: {y[i]}")
